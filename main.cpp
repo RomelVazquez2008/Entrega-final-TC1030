@@ -9,13 +9,30 @@ using namespace std;
 #include "menu.h"
 #include "cliente.h"
 
-void delay(unsigned int mseconds) //función para retardar el programa
+/**
+ * delay función para retardar el programa
+ *
+ * Permite al programa ser retrasado una cierta cantidad de segundos
+ * para que la ejecución del programa sea más fluida, y no salgan
+ * los mensajes de instantaneamente.
+ *
+ * @param int msceonds
+ * @return
+ */
+
+void delay(unsigned int mseconds)
 {
     clock_t goal = mseconds + clock();
     while (goal > clock());
 }
 
-//Romel Aldair Vazquez Molina A01700519
+/*
+* Proyecto: Simulaciòn rappy
+* Romel Aldair Vázquez Molina
+* A01700519
+* 11/06/2020
+* versión : Final
+*/
 
 //En esta entrega final ya está implementado la el menu interactivo para que el usuario selecione alimentos
 
